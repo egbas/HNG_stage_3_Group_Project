@@ -5,6 +5,7 @@ import com.hng.HNG_stage_3.dto.StripePaymentRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class PaymentController {
 
     @PostMapping("stripe")
-    public ResponseEntity<ErrorResponse> stripe(StripePaymentRequest stripePaymentRequest){
+    public ResponseEntity<ErrorResponse> stripe(@RequestBody StripePaymentRequest stripePaymentRequest){
         return null;
     }
     @PostMapping("flutterwave")
-    public ResponseEntity<ErrorResponse> flutterwave(FlutterwavePaymentRequest flutterwavePaymentRequest){
+    public ResponseEntity<ErrorResponse> flutterwave(@RequestBody FlutterwavePaymentRequest flutterwavePaymentRequest){
         return null;
     }
 }
