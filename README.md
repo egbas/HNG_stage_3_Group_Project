@@ -1,6 +1,6 @@
 # Extensive API Documentation
 # Link to API Documentation - https://prebor97.github.io/anotherSwaggerDoc/#/
-# Link to Database schema design - 
+# Link to Database schema design - https://drive.google.com/file/d/1JiM6S7zAKvXSGkTD7cxMktayfbrSMr3V/view?usp=sharing
 This documentation provides a high-level overview of the APIs for managing users, handling requests, and other features such as blogs, languages, and regions.
 
 ## Table of Contents
@@ -14,7 +14,8 @@ This documentation provides a high-level overview of the APIs for managing users
   - [Blog Management](#blog-management)
   - [Language Management](#language-management)
   - [Region Management](#region-management)
-- [Schemas](#schemas)
+- [DTOs](#dtos)
+- [Models](#models)
 
 ## API Endpoints
 
@@ -65,7 +66,7 @@ This documentation provides a high-level overview of the APIs for managing users
 - **Get All Regions**: Retrieves a list of all regions.
 - **Create Region**: Creates a new region.
 
-## Schemas
+## DTOs
 
 ### LoginRequest
 Represents the data required for a user to log in.
@@ -104,6 +105,66 @@ Represents an organization with properties such as id, name, and description.
 Represents a blog post with properties such as id, title, content, and associated user.
 
 ### Language
+Represents a language with properties such as id and name.
+
+### Region
+Represents a region with properties such as id and name.
+
+## Models
+
+### USER
+Represents a user entity with attributes such as id, name, email, password, and other personal details.
+
+### NOTIFICATIONS
+Represents notifications associated with users, including id, message, recipient, and status.
+
+### INVITE
+Represents invitations sent to users or prospective users, with details like id, email, and status.
+
+### ADDRESS
+Represents an address associated with a user or organization, including id, street, city, state, and postal code.
+
+### PROFILE
+Represents the profile information of a user, including id, bio, social media links, and other personal information.
+
+### AUTHENTICATION
+Represents authentication details such as login credentials and tokens for users.
+
+### GDBRCONSENT
+Represents the GDPR consent status of a user, including id, consent status, and date of consent.
+
+### SETTINGS
+Represents the settings associated with a user or organization, such as id, preferences, and configurations.
+
+### LANGUAGES
+Represents the languages available or preferred by users, including id and language name.
+
+### REGION
+Represents the regions or geographical areas associated with users or organizations, including id and region name.
+
+### PAYMENT
+Represents payment details associated with transactions, including id, amount, method, and status.
+
+### BLOG
+Represents blog posts created by users, including id, title, content, author, and date of creation.
+
+### EMAIL TEMPLATE FOR ADMIN
+Represents email templates used by administrators to send standardized emails, including id, subject, body, and template name.
+
+### ORGANIZATION
+Represents organizations with attributes such as id, name, description, and associated users.
+
+### ACTIVITY LOG
+Represents logs of activities performed by users or within the system, including id, action, user, and timestamp.
+
+### WAITLIST
+Represents users or entities on a waitlist for specific features or access, including id, email, and status.
+
+### MESSAGING
+Represents messaging details for sending messages between users or to users, including id, sender, recipient, message, and timestamp.
+
+### ROLE
+Represents roles assigned to users within the system, including id, role name, and associated permissions.
 Represents a language with properties such as id and name.
 
 ### Region
