@@ -1,6 +1,6 @@
 # Extensive API Documentation
-Link to API Documentation - https://prebor97.github.io/anotherSwaggerDoc/#/
-Link to Database schema design - 
+# Link to API Documentation - https://prebor97.github.io/anotherSwaggerDoc/#/
+# Link to Database schema design - 
 This documentation provides a high-level overview of the APIs for managing users, handling requests, and other features such as blogs, languages, and regions.
 
 ## Table of Contents
